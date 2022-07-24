@@ -1,0 +1,2266 @@
+"0","if(!require('ggplot2')) {
+  install.packages('ggplot2')
+  library('ggplot2')
+}
+"
+"2","Loading required package: ggplot2
+"
+"2","Warning in library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :"
+"2","
+ "
+"2"," there is no package called ‘ggplot2’
+"
+"2","Installing package into ‘/home/rahul/R/x86_64-pc-linux-gnu-library/3.6’
+(as ‘lib’ is unspecified)
+"
+"2","also installing the dependencies ‘colorspace’, ‘cli’, ‘crayon’, ‘utf8’, ‘farver’, ‘labeling’, ‘lifecycle’, ‘munsell’, ‘RColorBrewer’, ‘viridisLite’, ‘ellipsis’, ‘fansi’, ‘pillar’, ‘pkgconfig’, ‘vctrs’, ‘gtable’, ‘isoband’, ‘scales’, ‘tibble’, ‘withr’
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/colorspace_2.0-3.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 2199185 bytes (2.1 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.1 MB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/cli_3.3.0.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 495823 bytes (484 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 484 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/crayon_1.5.1.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 40178 bytes (39 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 39 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/utf8_1.2.2.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 240327 bytes (234 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 234 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/farver_2.1.0.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 1281864 bytes (1.2 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.2 MB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/labeling_0.4.2.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 10156 bytes
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 10156 bytes
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/lifecycle_1.0.1.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 99716 bytes (97 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 97 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/munsell_0.5.0.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 182653 bytes (178 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 178 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/RColorBrewer_1.1-3.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 11638 bytes (11 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 11 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/viridisLite_0.4.0.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 1267080 bytes (1.2 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.2 MB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/ellipsis_0.3.2.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 8066 bytes
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 8066 bytes
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/fansi_1.0.3.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 481163 bytes (469 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 469 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/pillar_1.7.0.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 529668 bytes (517 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 517 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/pkgconfig_2.0.3.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 6080 bytes
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 6080 bytes
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/vctrs_0.4.1.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 916782 bytes (895 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 895 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/gtable_0.3.0.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 368081 bytes (359 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 359 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/isoband_0.2.5.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 1671911 bytes (1.6 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.6 MB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/scales_1.2.0.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 270188 bytes (263 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 263 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/tibble_3.1.7.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 674873 bytes (659 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 659 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/withr_2.5.0.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 102089 bytes (99 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 99 KB
+
+"
+"2","trying URL 'https://cloud.r-project.org/src/contrib/ggplot2_3.3.6.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 3061989 bytes (2.9 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.9 MB
+
+"
+"2","* installing *source* package ‘colorspace’ ...
+"
+"2","** package ‘colorspace’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c colorspace.c -o colorspace.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o colorspace.so colorspace.o init.o -L/usr/lib/R/lib -lR
+"
+"2","installing to /home/rahul/R/x86_64-pc-linux-gnu-library/3.6/00LOCK-colorspace/00new/colorspace/libs
+"
+"2","** R
+"
+"2","** data
+"
+"2","*** moving datasets to lazyload DB
+"
+"2","** demo
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (colorspace)
+"
+"2","* installing *source* package ‘cli’ ...
+"
+"2","** package ‘cli’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ansi.c -o ansi.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cleancall.c -o cleancall.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c diff.c -o diff.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c errors.c -o errors.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c md5.c -o md5.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c progress-altrep.c -o progress-altrep.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c progress.c -o progress.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sha256.c -o sha256.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c thread.c -o thread.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tty.c -o tty.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8.c -o utf8.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c win-utf8.c -o win-utf8.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c winfiles.c -o winfiles.o
+"
+"1","gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o cli.so ansi.o cleancall.o diff.o errors.o init.o md5.o progress-altrep.o progress.o sha256.o thread.o tty.o utf8.o win-utf8.o winfiles.o -L/usr/lib/R/lib -lR
+"
+"2","installing to /home/rahul/R/x86_64-pc-linux-gnu-library/3.6/00LOCK-cli/00new/cli/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (cli)
+"
+"2","* installing *source* package ‘crayon’ ...
+"
+"2","** package ‘crayon’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (crayon)
+"
+"2","* installing *source* package ‘utf8’ ...
+"
+"2","** package ‘utf8’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c as_utf8.c -o as_utf8.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bytes.c -o bytes.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c context.c -o context.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c render.c -o render.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c render_table.c -o render_table.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c string.c -o string.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c text.c -o text.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8_encode.c -o utf8_encode.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8_format.c -o utf8_format.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8_normalize.c -o utf8_normalize.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8_valid.c -o utf8_valid.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8_width.c -o utf8_width.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c util.c -o util.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/array.c -o utf8lite/src/array.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/char.c -o utf8lite/src/char.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/encode.c -o utf8lite/src/encode.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/error.c -o utf8lite/src/error.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/escape.c -o utf8lite/src/escape.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/graph.c -o utf8lite/src/graph.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/graphscan.c -o utf8lite/src/graphscan.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/normalize.c -o utf8lite/src/normalize.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/render.c -o utf8lite/src/render.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/text.c -o utf8lite/src/text.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/textassign.c -o utf8lite/src/textassign.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/textiter.c -o utf8lite/src/textiter.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -Iutf8lite/src -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8lite/src/textmap.c -o utf8lite/src/textmap.o
+"
+"1","ar rcs libcutf8lite.a utf8lite/src/array.o utf8lite/src/char.o utf8lite/src/encode.o utf8lite/src/error.o utf8lite/src/escape.o utf8lite/src/graph.o utf8lite/src/graphscan.o utf8lite/src/normalize.o utf8lite/src/render.o utf8lite/src/text.o utf8lite/src/textassign.o utf8lite/src/textiter.o utf8lite/src/textmap.o
+"
+"1","gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o utf8.so as_utf8.o bytes.o context.o init.o render.o render_table.o string.o text.o utf8_encode.o utf8_format.o utf8_normalize.o utf8_valid.o utf8_width.o util.o -L. -lcutf8lite -L/usr/lib/R/lib -lR
+"
+"2","installing to /home/rahul/R/x86_64-pc-linux-gnu-library/3.6/00LOCK-utf8/00new/utf8/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (utf8)
+"
+"2","* installing *source* package ‘farver’ ...
+"
+"2","** package ‘farver’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ColorSpace.cpp -o ColorSpace.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Comparison.cpp -o Comparison.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Conversion.cpp -o Conversion.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c encode.cpp -o encode.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c farver.cpp -o farver.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.cpp -o init.o
+"
+"1","g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o farver.so ColorSpace.o Comparison.o Conversion.o encode.o farver.o init.o -L/usr/lib/R/lib -lR
+"
+"2","installing to /home/rahul/R/x86_64-pc-linux-gnu-library/3.6/00LOCK-farver/00new/farver/libs
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (farver)
+"
+"2","* installing *source* package ‘labeling’ ...
+"
+"2","** package ‘labeling’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (labeling)
+"
+"2","* installing *source* package ‘lifecycle’ ...
+"
+"2","** package ‘lifecycle’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (lifecycle)
+"
+"2","* installing *source* package ‘RColorBrewer’ ...
+"
+"2","** package ‘RColorBrewer’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (RColorBrewer)
+"
+"2","* installing *source* package ‘viridisLite’ ...
+"
+"2","** package ‘viridisLite’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (viridisLite)
+"
+"2","* installing *source* package ‘ellipsis’ ...
+"
+"2","** package ‘ellipsis’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dots.c -o dots.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o ellipsis.so dots.o init.o -L/usr/lib/R/lib -lR
+"
+"2","installing to /home/rahul/R/x86_64-pc-linux-gnu-library/3.6/00LOCK-ellipsis/00new/ellipsis/libs
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (ellipsis)
+"
+"2","* installing *source* package ‘fansi’ ...
+"
+"2","** package ‘fansi’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c assumptions.c -o assumptions.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c carry.c -o carry.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c has.c -o has.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c nchar.c -o nchar.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c normalize.c -o normalize.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read.c -o read.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rnchar.c -o rnchar.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c state.c -o state.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c strip.c -o strip.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c substr.c -o substr.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tabs.c -o tabs.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tohtml.c -o tohtml.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c trimws.c -o trimws.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c unhandled.c -o unhandled.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utf8.c -o utf8.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.c -o utils.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c wrap.c -o wrap.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c write.c -o write.o
+"
+"1","gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o fansi.so assumptions.o carry.o has.o init.o nchar.o normalize.o read.o rnchar.o state.o strip.o substr.o tabs.o tohtml.o trimws.o unhandled.o utf8.o utils.o wrap.o write.o -L/usr/lib/R/lib -lR
+"
+"2","installing to /home/rahul/R/x86_64-pc-linux-gnu-library/3.6/00LOCK-fansi/00new/fansi/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (fansi)
+"
+"2","* installing *source* package ‘pkgconfig’ ...
+"
+"2","** package ‘pkgconfig’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (pkgconfig)
+"
+"2","* installing *source* package ‘gtable’ ...
+"
+"2","** package ‘gtable’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (gtable)
+"
+"2","* installing *source* package ‘isoband’ ...
+"
+"2","** package ‘isoband’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG -Itestthat    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c clip-lines.cpp -o clip-lines.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG -Itestthat    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.cpp -o init.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG -Itestthat    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c isoband.cpp -o isoband.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG -Itestthat    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c polygon.cpp -o polygon.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG -Itestthat    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c separate-polygons.cpp -o separate-polygons.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG -Itestthat    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c test-clip-lines.cpp -o test-clip-lines.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG -Itestthat    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c test-runner.cpp -o test-runner.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG -Itestthat    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c test-separate-polygons.cpp -o test-separate-polygons.o
+"
+"1","g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o isoband.so clip-lines.o init.o isoband.o polygon.o separate-polygons.o test-clip-lines.o test-runner.o test-separate-polygons.o -L/usr/lib/R/lib -lR
+"
+"2","installing to /home/rahul/R/x86_64-pc-linux-gnu-library/3.6/00LOCK-isoband/00new/isoband/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (isoband)
+"
+"2","* installing *source* package ‘withr’ ...
+"
+"2","** package ‘withr’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (withr)
+"
+"2","* installing *source* package ‘munsell’ ...
+"
+"2","** package ‘munsell’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (munsell)
+"
+"2","* installing *source* package ‘vctrs’ ...
+"
+"2","** package ‘vctrs’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c altrep-rle.c -o altrep-rle.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c altrep.c -o altrep.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c arg-counter.c -o arg-counter.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c arg.c -o arg.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c assert.c -o assert.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bind.c -o bind.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c c-unchop.c -o c-unchop.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c c.c -o c.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c callables.c -o callables.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cast-bare.c -o cast-bare.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cast-dispatch.c -o cast-dispatch.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cast.c -o cast.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c compare.c -o compare.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c complete.c -o complete.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c conditions.c -o conditions.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dictionary.c -o dictionary.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dim.c -o dim.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c empty.c -o empty.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c equal.c -o equal.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fields.c -o fields.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fill.c -o fill.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c globals.c -o globals.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c group.c -o group.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c growable.c -o growable.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c hash.c -o hash.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c interval.c -o interval.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c match-joint.c -o match-joint.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c match.c -o match.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c names.c -o names.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c order-collate.c -o order-collate.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c order-groups.c -o order-groups.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c order-sortedness.c -o order-sortedness.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c order-truelength.c -o order-truelength.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c order.c -o order.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c poly-op.c -o poly-op.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c proxy-restore.c -o proxy-restore.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c proxy.c -o proxy.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ptype-common.c -o ptype-common.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ptype.c -o ptype.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ptype2-dispatch.c -o ptype2-dispatch.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ptype2.c -o ptype2.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rank.c -o rank.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rep.c -o rep.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rlang-dev.c -o rlang-dev.o
+"
+"1","g++ -std=gnu++11 -I""/usr/share/R/include"" -DNDEBUG -I./rlang    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rlang-rcc.cpp -o rlang-rcc.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rlang.c -o rlang.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c runs.c -o runs.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c shape.c -o shape.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c size-common.c -o size-common.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c size.c -o size.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c slice-array.c -o slice-array.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c slice-assign-array.c -o slice-assign-array.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c slice-assign.c -o slice-assign.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c slice-chop.c -o slice-chop.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c slice-interleave.c -o slice-interleave.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c slice.c -o slice.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c split.c -o split.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c subscript-loc.c -o subscript-loc.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c subscript.c -o subscript.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c translate.c -o translate.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c type-data-frame.c -o type-data-frame.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c type-date-time.c -o type-date-time.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c type-factor.c -o type-factor.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c type-info.c -o type-info.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c type-integer64.c -o type-integer64.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c type-tibble.c -o type-tibble.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c typeof2-s3.c -o typeof2-s3.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c typeof2.c -o typeof2.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c unspecified.c -o unspecified.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils-dispatch.c -o utils-dispatch.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.c -o utils.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vctrs-core.c -o vctrs-core.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG -I./rlang   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c version.c -o version.o
+"
+"1","g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o vctrs.so altrep-rle.o altrep.o arg-counter.o arg.o assert.o bind.o c-unchop.o c.o callables.o cast-bare.o cast-dispatch.o cast.o compare.o complete.o conditions.o dictionary.o dim.o empty.o equal.o fields.o fill.o globals.o group.o growable.o hash.o init.o interval.o match-joint.o match.o names.o order-collate.o order-groups.o order-sortedness.o order-truelength.o order.o poly-op.o proxy-restore.o proxy.o ptype-common.o ptype.o ptype2-dispatch.o ptype2.o rank.o rep.o rlang-dev.o rlang-rcc.o rlang.o runs.o shape.o size-common.o size.o slice-array.o slice-assign-array.o slice-assign.o slice-chop.o slice-interleave.o slice.o split.o subscript-loc.o subscript.o translate.o type-data-frame.o type-date-time.o type-factor.o type-info.o type-integer64.o type-tibble.o typeof2-s3.o typeof2.o unspecified.o utils-dispatch.o utils.o vctrs-core.o version.o -L/usr/lib/R/lib -lR
+"
+"2","installing to /home/rahul/R/x86_64-pc-linux-gnu-library/3.6/00LOCK-vctrs/00new/vctrs/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (vctrs)
+"
+"2","* installing *source* package ‘pillar’ ...
+"
+"2","** package ‘pillar’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (pillar)
+"
+"2","* installing *source* package ‘scales’ ...
+"
+"2","** package ‘scales’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (scales)
+"
+"2","* installing *source* package ‘tibble’ ...
+"
+"2","** package ‘tibble’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c attributes.c -o attributes.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c coerce.c -o coerce.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -std=gnu99 -I""/usr/share/R/include"" -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c matrixToDataFrame.c -o matrixToDataFrame.o
+"
+"1","gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o tibble.so attributes.o coerce.o init.o matrixToDataFrame.o -L/usr/lib/R/lib -lR
+"
+"2","installing to /home/rahul/R/x86_64-pc-linux-gnu-library/3.6/00LOCK-tibble/00new/tibble/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (tibble)
+"
+"2","* installing *source* package ‘ggplot2’ ...
+"
+"2","** package ‘ggplot2’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** data
+"
+"2","*** moving datasets to lazyload DB
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (ggplot2)
+"
+"2","
+"
+"2",""
+"2","The downloaded source packages are in
+	‘/tmp/RtmpyyG5gM/downloaded_packages’"
+"2",""
+"2","
+"

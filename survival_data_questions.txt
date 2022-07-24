@@ -1,0 +1,52 @@
+The times to death (in weeks) of two
+groups of leukaemia patients (grouped according to a morphological 
+variable called the ag factor) were recorded and their white blood
+cell counts were measured. 
+Exponential distribution is commonly used for fitting
+survival data. 
+Do an exploratory data analysis to see if the time 
+varies with WBC (or a suitable transformation to it) and
+AG. The exponential distribution is commonly used
+to explain the survival times. 
+Fit an exponential distribution with the link function 
+to be the log function. 
+Evaluate how the fit is. 
+Can you suggest some other rational model for the given 
+survival time data? Justification is needed. 
+
+
+      WBC Time AG
+1    2300   65  1
+2     750  156  1
+3    4300  100  1
+4    2600  134  1
+5    6000   16  1
+6   10500  108  1
+7   10000  121  1
+8   17000    4  1
+9    5400   39  1
+10   7000  143  1
+11   9400   56  1
+12  32000   26  1
+13  35000   22  1
+14 100000    1  1
+15 100000    1  1
+16  52000    5  1
+17 100000   65  1
+18   4400   56  2
+19   3000   65  2
+20   4000   17  2
+21   1500    7  2
+22   9000   16  2
+23   5300   22  2
+24  10000    3  2
+25  19000    4  2
+26  27000    2  2
+27  28000    3  2
+28  31000    8  2
+29  26000    4  2
+30  21000    3  2
+31  79000   30  2
+32 100000    4  2
+33 100000   43  2
+

@@ -1,0 +1,21 @@
+Military pilots sometimes black out when their brains are deprived 
+of oxygen due to G-forces during violent manoeuvres. A study produced similar symptoms 
+by exposing volunteers' lower bodies to negative air pressure, likewise 
+decreasing oxygen to the brain. The data record the ages of eight volunteers and 
+whether they showed syncopal blackout-related signs (pallor, sweating, 
+slow heartbeat, unconsciousness) during an 18 min period. 
+Do a proper exploratory data analysis. Fit a model with justification.
+Does resistance to blackout decrease with age?
+
+
+
+
+  Subject Age Signs
+1      JW  39     0
+2      JM  42     1
+3      DT  20     0
+4      LK  37     1
+5      JK  20     1
+6      MK  21     0
+7      FP  41     1
+8      DG  52     1

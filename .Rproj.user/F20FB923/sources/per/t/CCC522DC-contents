@@ -1,0 +1,3 @@
+```{r}
+data <- read.csv('./binary_data1.txt', sep="")
+```
